@@ -13,6 +13,7 @@
         <div class="container header__container">
             <a href="#" class="logo"><i class="fa-solid fa-paw fa-2x"></i> Милые котики</a>
             <button class="button" id="add"><i class="fa-solid fa-plus"></i></button>
+            <button class="button" id="login">Войти</button>
         </div>
     </header>
     <main class="main container">
@@ -36,7 +37,7 @@
             <img src="#" class="popup__image" alt="">
         </div>
     </div>
-    <div class="popup popup-add">
+    <div class="popup popup-add popup_active">
         <div class="popup__container" >
             <button class="popup__close button"><i class="fa-solid fa-xmark"></i></button>
             <h2>Добавить питомца</h2>
@@ -57,6 +58,19 @@
             </form>
         </div>
     </div>
+
+    <div class="popup popup-login popup_active">
+        <div class="popup__container" >
+            <button class="popup__close button"><i class="fa-solid fa-xmark"></i></button>
+            <h2>Авторизация</h2>
+            <form class="form" id="popup-form-login">
+                <input type="email" class="form__input" name="email" required placeholder="email">
+                <input type="password" class="form__input" name="password" placeholder="password">
+                <button type="submit" class="form__button button">Войти</button>
+            </form>
+        </div>
+    </div>
+
     <template id="card-template">
 
         <div class="card">
@@ -66,11 +80,13 @@
         </div>
 
     </template>
-    <script src="./src/cats.js" defer></script>
-    <script src="./src/api.js" defer></script>
-     <script src="./src/popup.js" defer></script>
-    <script src="./src/popup-image.js" defer></script>
-    <script src="./src/card.js" defer></script>
-    <script src="./src/index.js" defer></script>
+
+    <script src="api.js" defer></script>
+    <script src="card.js" defer></script>
+    <script src="cats.js" defer></script>
+    <script src="popup-image.js" defer></script>
+    <script src="popup.js" defer></script>
+    <script src="utils.js" defer></script>
+
 </body>
 </html>

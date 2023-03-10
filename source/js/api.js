@@ -1,5 +1,5 @@
 const config = {
-    baseUrl: "https://cats.petiteweb.dev/api/single/maxorel",
+    baseUrl: "https://cats.petiteweb.dev/api/single/lolaconfused",
     headers: {
       "content-type": "application/json",
     },
