@@ -1,3 +1,10 @@
+import { api } from './api.js';
+import { Card } from './card.js';
+import { cats } from './cats.js';
+import { PopupWithImage } from './popup-image.js';
+import { Popup } from './popup.js';
+import './utils.js';
+
 const cardsContainer = document.querySelector(".cards");
 const btnOpenPopup = document.querySelector(".btn");
 const formCatAdd = document.querySelector("#popup-form-add");
